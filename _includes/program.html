@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+
+<!-- <p> The abstracts of the contributed talks are available at the <a href="https://hal-lirmm.ccsd.cnrs.fr/TLLA2021/browse/latest-publications"> HAL</a> repository.</p> -->
+      
+      <h2>Program</h2>
+      
+      <p>(schedules are given in CEST)</p>
+
+      {% for day in site.data.program %} 
+        <br/><br/>
+        <h4>{{ day.date | date: "%B %e" }}</h4>
+        
+        <table>    
+          {% for item in day.list %}
+            <tr>
+              <td  style="text-align:right; vertical-align: top; padding-right:1ex;">{{ item[0] | date: "%H:%M" }}</td>
+              <td>
+                {% if item[2] == "contributed" %}
+                  {% assign paper = site.data.papers | where: "number", item[1] | first %}
+                  <div class="paper">
+                    <span class="number">
+                      {{ paper.number }}.
+                    </span>
+                    <span class="authors">
+                      {{ paper.authors | join: ", " }}.
+                    </span>
+                    <span class="title">
+                      {% if paper.link %}
+                        <a href="abstracts/{{ paper.link }}">{{ paper.title }}</a>.
+                      {% else %}
+                        {{ paper.title }}.
+                      {% endif %}
+                    </span>
+                  </div>
+                {% elsif item[2] == "invited" %}
+                  {% assign n = item[1] %}
+                  {% assign invited = site.data.speakers[n] %}
+                  <div class="paper">
+                    <span class="number">
+                    </span>
+                    <span class="invited">Invited Talk {{item[3]}}</span><br />
+                    <span class="authors">
+                      {{ invited.firstname }} {{ invited.lastname }}.
+                    </span>
+                    <span class="title">
+                      {% if invited.link %}
+                        <a href="abstracts/{{ invited.link }}">{{ invited.title }}</a>.
+                      {% else %}
+                        {{ invited.title }}.
+                      {% endif %}
+                    </span>
+                  </div>
+                {% elsif item[2] == "tutorial" %}
+                  {% assign n = item[1] %}
+                  {% assign tutorial = site.data.tutorials[n] %}
+                  <div class="paper">
+                    <span class="number">
+                    </span>
+                    <span class="invited">Tutorial {{item[3]}}</span><br />
+                    <span class="authors">
+                      {{ tutorial.firstname }} {{ tutorial.lastname }}.
+                    </span>
+                    <span class="title">
+                      {% if tutorial.link %}
+                        <a href="abstracts/{{ tutorial.link }}">{{ tutorial.title }}</a>.
+                      {% else %}
+                        {{ tutorial.title }}.
+                      {% endif %}
+                    </span>
+                  </div>
+                {% else %}
+                  <div class="break">
+                    <span>
+                      {{ item[2] }}
+                    </span>
+                  </div>
+                {% endif %} 
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      {% endfor %}
+
+      
+    </div>
+  </div>
+</div>

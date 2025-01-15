@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body id="page-top">
+
+  {%- include header-home.html -%}
+
+  {% comment %}
+  <section id="about">
+  {%- include about.html -%}
+  </section>
+
+  <section id="submission" class="bg-light">
+  {%- include submission.html -%}
+  </section>
+
+  <section id="dates">
+  {%- include dates.html -%}
+  </section>
+
+  <section id="speakers" class="bg-light">
+  {%- include speakers.html -%}
+  </section>
+
+  <section id="tutorials" class="bg-light">
+  {%- include tutorials.html -%}
+  </section>
+
+  <section id="program">
+  {%- include program.html -%}
+  </section>
+
+  <section id="committees" class="bg-light">
+  {%- include committees.html -%}
+  </section>
+  {% endcomment %}
+
+  {%- include footer.html -%}
+
+  {%- include js.html -%}
+
+</body>
+
+</html>

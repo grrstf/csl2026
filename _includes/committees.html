@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <h2>Program Committee</h2>
+
+      {% if site.data.program-committee.chair.first %}
+      <h4>Chairs</h4>
+
+      <ul>
+        {% for chair in site.data.program-committee.chair %}
+        <li>
+          <span class="lead">
+            <a href="{{ chair.webpage }}">
+              {{ chair.firstname }}
+              {{ chair.lastname }}
+            </a>
+          </span>
+          -
+          {{ chair.affiliation }}
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <ul>
+        <li>
+          <span class="lead">
+          <a href="{{ site.data.program-committee.chair.webpage }}">
+            {{ site.data.program-committee.chair.firstname }}
+            {{ site.data.program-committee.chair.lastname }}
+          </a>
+          </span>
+          -
+          {{ site.data.program-committee.chair.affiliation }}
+        </li>
+      </ul>
+      {% endif %}
+
+      <h4>Members</h4>
+
+      <ul>
+        {% for member in site.data.program-committee.members %}
+        <li>
+          <span class="lead">
+            <a href="{{ member.webpage }}">
+              {{ member.firstname }}
+              {{ member.lastname }}
+            </a> 
+          </span>
+          -
+          {{ member.affiliation }}
+        </li>
+        {% endfor %}
+      </ul>
+
+      <p>&nbsp;</p>
+
+      <h2>Organising Committee</h2>
+
+      <ul>
+        {% for member in site.data.organising-committee %}
+        <li>
+          <span class="lead">
+            {{ member.firstname }}
+            {{ member.lastname }}
+          </span>
+          -
+          {{ member.affiliation }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

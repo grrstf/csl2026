@@ -1,0 +1,17 @@
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="style/vendor/jquery/jquery.min.js"></script>
+  <script src="style/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="style/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="style/vendor/scrolling-nav/scrolling-nav.js"></script>
+
+  <!-- makes home navbar solid after scrolling -->
+  <script>
+    $(window).scroll(function() {
+      $('.navbar-home').toggleClass('solid', $(this).scrollTop() > 80);
+    });
+  </script>

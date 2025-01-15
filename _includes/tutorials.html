@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+
+      <h2>Tutorials</h2>
+
+      <ul>
+        {% for speaker in site.data.tutorials %}
+        <li>
+          <span class="lead">
+            <a href="{{ speaker.webpage }}">
+              {{ speaker.firstname }}
+              {{ speaker.lastname }}
+            </a>
+          </span>
+          -
+          {{ speaker.affiliation }}<br>
+          <b>{{ speaker.title }}</b><br>
+          {{ speaker.abstract }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+

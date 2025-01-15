@@ -1,0 +1,39 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  {% seo %}
+
+  <title>
+    {% if page.title %}
+      {{ site.title | prepend: " | " | prepend: page.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ site.baseurl }}/style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{{ site.baseurl }}/style/vendor/scrolling-nav/scrolling-nav.css" rel="stylesheet">
+
+  <!-- <link href="{{ site.baseurl }}/style/css/header.css" rel="stylesheet"> -->
+  <style>
+    {% include css/header.css %}
+    {% include css/papers.css %}
+  </style>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/style/icons/favicon/apple-touch-icon.png' | absolute_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/style/icons/favicon/favicon-32x32.png' | absolute_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/style/icons/favicon/favicon-16x16.png' | absolute_url }}">
+  <link rel="manifest" href="{{ '/style/icons/favicon/site.webmanifest' | absolute_url }}">
+  <link rel="shortcut icon" href="{{ '/style/icons/favicon/favicon.ico' | absolute_url }}">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="{{ '/style/icons/favicon/browserconfig.xml' | absolute_url }}">
+  <meta name="theme-color" content="#ffffff">
+</head>

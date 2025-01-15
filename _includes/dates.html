@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+
+      <h2>Important Dates</h2>
+        All deadlines are midnight anywhere-on-earth (AoE);
+        late submissions will not be considered.
+
+        <ul>
+          {% for date in site.data.dates %}
+          <li>
+            <strong>{{ date.name }}: </strong>{{ date.date }}
+          </li>
+          {% endfor %}
+          <li>
+            <strong>Workshop: </strong>{{ site.date }}
+          </li>
+        </ul>
+
+    </div>
+  </div>
+</div>

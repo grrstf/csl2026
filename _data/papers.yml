@@ -1,0 +1,92 @@
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+- number: "1"
+  title: An enriched calculus for kernels and linear operators
+  authors:
+  - Pedro H. Azevedo de Amorim
+  link: Azevedo_de_Amorim.pdf
+
+- number: "2"
+  title: Stability property for the Call-by-Value lambda-calculus through Taylor expansion
+  authors:
+  -  Davide Barbarossa
+  link: Barbarossa_final.pdf
+
+- number: "3"
+  title: Function spaces for orbit-finite sets
+  authors:
+  - Mikołaj Bojańczyk
+  - Lê Thành Dũng Nguyễn
+  - Rafał Stefański
+  link: Bojanczik.pdf
+
+- number: "4"
+  title: Injectivity of the coherent model for a fragment of connected MELL proof-nets
+  authors:
+  - Antonio Bucciarelli
+  - Raffaele Di Donna
+  - Lorenzo Tortora de Falco
+  link: DiDonna_final.pdf
+
+- number: "5"
+  title: On expressing stateful computation in linear logic
+  authors:
+  - Luis Caires
+  link: Caires_final.pdf
+
+- number: "6"
+  title: Normalization in multiplicative exponential linear logic via Taylor expansion
+  authors:
+  - Stefano Catozi
+  link: Catozi_final.pdf
+
+- number: "7"
+  title: The art of realizability
+  authors:
+  - Jacopo Furlan
+  link: Furlan_final.pdf
+
+- number: "8"
+  title: Interpolation in extensions of linear logic
+  authors:
+  - Wesley Fussner
+  - Simon Santschi 
+  link: Fussner_final.pdf
+
+- number: "9"
+  title: The theory of meaningfulness in the Call-by-Value lambda-calculus
+  authors:
+  - Giulio Guerrieri
+  link: Guerrieri.pdf
+
+- number: "10"
+  title: Laplace transformation and symmetry in differential linear logic
+  authors:
+  - Jean-Simon Lemay
+  - Marie Kerjean
+  link: Kerjean.pdf
+
+- number: "11"
+  title: A supply of functorial models of linear logic
+  authors:
+  - Morgan Rogers
+  link: Rogers_final.pdf
+
+- number: "12"
+  title: An axiomatic presentation of linear realizability
+  authors:
+  - Thomas Seiller
+  link: Seiller.pdf
+
+- number: "13"
+  title: Categorical phase semantics for linear logic
+  authors:
+  - Riley Shahar
+  - Steve Zdancewic
+  link: Shahar.pdf
+
+- number: "14"
+  title: Craig interpolation for semi-substructural logics
+  authors:
+  - Niccolò Veltri
+  - Cheng-Syuan Wan
+  link: Veltri_final.pdf

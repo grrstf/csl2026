@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+
+      <h1>Accepted Papers</h1>
+      <!-- <p> The abstracts are available at the <a href="https://hal-lirmm.ccsd.cnrs.fr/TLLA2021/browse/latest-publications"> HAL</a> repository.</p> -->
+      {% for paper in site.data.papers %}
+      <div class="paper">
+        <span class="number">
+          {{ paper.number }}.
+        </span>
+        </spam>
+        <span class="authors">
+          {{ paper.authors | join: ", " }}.
+        </span>
+        <span class="title">
+          {{ paper.title }}.
+        </span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

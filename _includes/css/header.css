@@ -1,0 +1,29 @@
+header.home {
+  height: 100vh;
+  min-height: 500px;
+  background-attachment: scroll;
+  background-image: url('{{ site.baseurl }}/style/img/header-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.navbar-home {
+  background-color: transparent ! important;
+}
+
+.navbar-home.solid, .navbar-other {
+  background-color: #70acea ! important;
+}
+
+.navbar .nav-link {
+  color: blue ! important;
+}
+
+.footer {
+  background-color: #70acea ! important;
+  color: blue ! important;
+}

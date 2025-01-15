@@ -1,0 +1,36 @@
+.paper {
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    border-top: solid black 1px;
+    padding: 2pt;
+    padding-left: 3.5ex;
+    text-indent: -3.5ex;
+}
+
+.paper:last-child {
+    border-bottom: solid black 1px;
+}
+
+.paper .number {
+    display: inline-block;
+    width: 3ex;
+    text-align: right;
+}
+
+.paper .authors {
+    font-weight: bold;
+}
+
+.paper .title {
+    font-style: italic;
+}
+
+.paper .invited {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.break {
+    padding: 2pt;
+    padding-left: 3.5ex;
+}

@@ -1,0 +1,43 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top {{ navbar-classes }}" id="mainNav">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <!-- <a class="navbar-brand" href="http://www.linearity.org.uk">Linearity</a> -->
+      <a class="navbar-brand" href="https://www.eacsl.org/csl-conferences/">CSL</a>
+      <a class="navbar-brand" href="https://www.eacsl.org/">EACSL</a>
+      <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> -->
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        {% for item in site.data.toc %}
+        <li class="nav-item">
+        {% if item.url %}
+          <a class="nav-link" href="{{ item.url }}" style="color:red;">{{item.title}}</a>
+        {% elsif item.link %}
+          <a class="nav-link js-scroll-trigger"
+              href="{{ item.link | prepend: site.baseurl }}">
+            {{item.title}}
+          </a>
+        {% else %}
+          <a class="nav-link js-scroll-trigger" href="{{ site.baseurl }}">
+            {{item.title}}
+          </a>
+        {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

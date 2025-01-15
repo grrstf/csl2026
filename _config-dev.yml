@@ -1,0 +1,4 @@
+# Special setting for building the site for a test site while developing
+
+baseurl: "/~guerrini/tmp/csl2026" # the subpath of your site, e.g. /blog
+url: "https://lipn.univ-paris13.fr" # the base hostname & protocol for your site, e.g. http://example.com
